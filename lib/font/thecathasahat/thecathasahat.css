@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "TheCatHasAHat";
+  font-display: swap;
+  src: url("./TheCatHasAHat.otf");
+  src: url("./TheCatHasAHat.otf") format("opentype"),
+    url("./TheCatHasAHat.ttf") format("truetype");
+}

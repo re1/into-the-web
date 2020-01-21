@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Recursive";
+  font-display: swap;
+  src: url("Recursive-Subset.woff2") format("woff2-variations"),
+    url("Recursive.woff2") format("woff2-variations"),
+    url("Recursive.ttf") format("truetype-variations");
+  font-weight: 300 1000;
+}
+
+@font-face {
+  font-family: "Recursive Sans";
+  font-display: swap;
+  font-style: normal;
+  font-weight: bold;
+  src: url("RecursiveSans-LinearBold.eot");
+  src: local("Recursive Sans Linear Bold"), local("RecursiveSans-LinearBold"),
+    url("RecursiveSans-LinearBold.eot?#iefix") format("embedded-opentype"),
+    url("RecursiveSans-LinearBold.woff2") format("woff2"),
+    url("RecursiveSans-LinearBold.woff") format("woff"),
+    url("RecursiveSans-LinearBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Recursive Sans";
+  font-display: swap;
+  font-style: italic;
+  font-weight: bold;
+  src: url("RecursiveSans-LinearBoldItalic.eot");
+  src: local("Recursive Sans Linear Bold Italic"),
+    local("RecursiveSans-LinearBoldItalic"),
+    url("RecursiveSans-LinearBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("RecursiveSans-LinearBoldItalic.woff2") format("woff2"),
+    url("RecursiveSans-LinearBoldItalic.woff") format("woff"),
+    url("RecursiveSans-LinearBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Recursive Sans";
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url("RecursiveSans-LinearRegular.eot");
+  src: local("Recursive Sans Linear Regular"),
+    local("RecursiveSans-LinearRegular"),
+    url("RecursiveSans-LinearRegular.eot?#iefix") format("embedded-opentype"),
+    url("RecursiveSans-LinearRegular.woff2") format("woff2"),
+    url("RecursiveSans-LinearRegular.woff") format("woff"),
+    url("RecursiveSans-LinearRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Recursive Sans";
+  font-display: swap;
+  font-weight: normal;
+  font-style: italic;
+  src: url("RecursiveSans-LinearItalic.eot");
+  src: local("Recursive Sans Linear Italic"),
+    local("RecursiveSans-LinearItalic"),
+    url("RecursiveSans-LinearItalic.eot?#iefix") format("embedded-opentype"),
+    url("RecursiveSans-LinearItalic.woff2") format("woff2"),
+    url("RecursiveSans-LinearItalic.woff") format("woff"),
+    url("RecursiveSans-LinearItalic.ttf") format("truetype");
+}
+
+:root {
+  --mono: "MONO" 0.2;
+  --casl: "CASL" 1;
+  --slnt: "slnt" 0;
+  --ital: "ital" 0.5;
+}
+
+* {
+  font-variation-settings: var(--mono), var(--casl), var(--slnt), var(--ital);
+}
