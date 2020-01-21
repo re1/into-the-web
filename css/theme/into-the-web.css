@@ -1,7 +1,5 @@
 /**
- * Black theme for reveal.js. This is the opposite of the 'white' theme.
- *
- * By Hakim El Hattab, http://hakim.se
+ * Custom theme for reveal.js
  */
 @import url(../../lib/font/recursive/recursive.css);
 @import url(../../lib/font/thecathasahat/thecathasahat.css);
@@ -152,14 +150,14 @@ body {
   width: 90%;
   margin: 20px auto;
   text-align: left;
-  font-size: 0.55em;
-  font-family: monospace;
+  font-size: 0.65em;
+  font-family: "Recursive", "Fira Code", "Fira Mono", monospace;
   line-height: 1.2em;
   word-wrap: break-word;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); }
+  box-shadow: none; }
 
 .reveal code {
-  font-family: monospace;
+  font-family: "Recursive", "Fira Code", "Fira Mono", monospace;
   text-transform: none; }
 
 .reveal pre code {
@@ -218,9 +216,9 @@ body {
 .reveal a {
   color: #6ea;
   text-decoration: none;
-  -webkit-transition: color .15s ease;
-  -moz-transition: color .15s ease;
-  transition: color .15s ease; }
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease; }
 
 .reveal a:hover {
   color: #abf6d0;
@@ -245,9 +243,9 @@ body {
   box-shadow: none; }
 
 .reveal a img {
-  -webkit-transition: all .15s linear;
-  -moz-transition: all .15s linear;
-  transition: all .15s linear; }
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  transition: all 0.15s linear; }
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);

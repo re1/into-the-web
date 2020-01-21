@@ -1,7 +1,5 @@
 /**
- * Black theme for reveal.js. This is the opposite of the 'white' theme.
- *
- * By Hakim El Hattab, http://hakim.se
+ * Custom theme for reveal.js
  */
 
 // Default mixins and settings -----------------
@@ -34,6 +32,10 @@ $heading1Size: 3.5em;
 $heading2Size: 2.6em;
 $heading3Size: 1.3em;
 $heading4Size: 1em;
+
+$codeFont: "Recursive", "Fira Code", "Fira Mono", monospace;
+$codeSize: 0.65em;
+$codeShadow: none;
 
 section.has-light-background {
   &,

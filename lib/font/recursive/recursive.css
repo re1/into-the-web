@@ -64,11 +64,23 @@
 
 :root {
   --mono: "MONO" 0.2;
-  --casl: "CASL" 1;
+  --casl: "CASL" 0.8;
   --slnt: "slnt" 0;
   --ital: "ital" 0.5;
 }
 
 * {
-  font-variation-settings: var(--mono), var(--casl), var(--slnt), var(--ital);
+  font-variation-settings: var(--mono), var(--casl), var(--slnt), var(--ital) !important;
+}
+
+cite,
+em,
+i {
+  --slnt: "slnt" -15;
+}
+
+code,
+pre {
+  --mono: "MONO" 1;
+  --casl: "CASL" 0;
 }
