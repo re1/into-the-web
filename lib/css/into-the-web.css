@@ -1,5 +1,4 @@
 /* Comment */
-.hljs-tag,
 .hljs-comment,
 .hljs-quote {
   --slnt: "slnt" -15;
@@ -60,6 +59,10 @@
   overflow-x: auto;
   color: #fff;
   padding: 0.5em;
+}
+
+.hljs-tag {
+  color: #666;
 }
 
 .hljs-emphasis {
