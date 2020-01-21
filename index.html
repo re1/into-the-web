@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>Into the Web</title>
+    <title>➽ Into the Web</title>
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/reveal.css" />
@@ -26,6 +26,16 @@
         : "css/print/paper.css";
       document.getElementsByTagName("head")[0].appendChild(link);
     </script>
+
+    <style>
+      code > aside {
+        position: absolute;
+        width: max-content;
+        margin: 1em 60%;
+        transform: translate(-25%, -125%);
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <div class="reveal">
@@ -57,27 +67,50 @@
             HyperText <strong><u>Markup</u></strong> Language
           </p>
           <br />
-          <pre><code data-trim>
-            <!-- Comment -->
-            <tag attribute="value">Content</tag>
+          <pre><code data-trim data-noescape>
+            &lt;!-- Comment --&gt;<aside>        <b>HTML-Element</b><br />↙</aside>
+            &lt;tag attribute="value"&gt;Content&lt;/tag&gt;
           </code></pre>
         </section>
 
         <section>
-          <h3>A document</h3>
           <pre><code class="hljs" data-line-numbers data-trim data-noescape>
-          &lt;!DOCTYPE html&gt;
-          &lt;html lang="en"&gt;
-            &lt;head&gt;
-              &lt;title&gt;Into the Web&lt;title&gt;
-            &lt;/head&gt;
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+              &lt;head&gt;
+                &lt;title&gt;Into the Web&lt;/title&gt;
+              &lt;/head&gt;
 
-            &lt;body&gt;
-              &lt;h1&gt;Here be tigers!&lt;h1&gt;
-              &lt;p&gt;Yet another draggy cat blog.&lt;p&gt;
-            &lt;body&gt;
-          &lt;html&gt;
-        </code></pre>
+              &lt;body&gt;
+                &lt;h1&gt;Here be tigers!&lt;/h1&gt;
+                &lt;p&gt;Yet another draggy cat site.&lt;/p&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;
+          </code></pre>
+          <pre>→ *.html</pre>
+        </section>
+
+        <section>
+          <h3>Building blocks</h3>
+          <pre class="center"><code class="hljs" data-trim data-noescape>
+            &lt;h1&gt;Heading&lt;/h1&gt;
+          </code></pre>
+
+          <pre class="center"><code class="hljs" data-trim data-noescape>
+            &lt;p&gt;Paragraph&lt;/p&gt;
+          </code></pre>
+
+          <pre class="center"><code class="hljs" data-trim data-noescape>
+            &lt;b&gt;<b>bold</b>&lt;/b&gt; 
+          </code></pre>
+
+          <pre class="center"><code class="hljs" data-trim data-noescape>
+            &lt;i&gt;<i>italic</i>&lt;/i&gt;
+          </code></pre>
+
+          <pre class="center"><code class="hljs" data-trim data-noescape>
+            &lt;u&gt;<u>underlined</u>&lt;/u&gt;
+          </code></pre>
         </section>
 
         <!-- <section

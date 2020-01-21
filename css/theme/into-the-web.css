@@ -12,6 +12,9 @@ section.has-light-background h5,
 section.has-light-background h6 {
   color: #222; }
 
+.center {
+  text-align: center !important; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -27,12 +30,12 @@ body {
 
 ::selection {
   color: #fff;
-  background: #d9fbea;
+  background: #e66;
   text-shadow: none; }
 
 ::-moz-selection {
   color: #fff;
-  background: #d9fbea;
+  background: #e66;
   text-shadow: none; }
 
 .reveal .slides section,
