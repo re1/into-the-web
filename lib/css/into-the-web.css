@@ -1,4 +1,5 @@
 /* Comment */
+.hljs-tag,
 .hljs-comment,
 .hljs-quote {
   --slnt: "slnt" -15;
@@ -8,7 +9,6 @@
 /* Red */
 .hljs-variable,
 .hljs-template-variable,
-.hljs-tag,
 .hljs-name,
 .hljs-selector-id,
 .hljs-selector-class,
