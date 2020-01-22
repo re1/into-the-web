@@ -49,8 +49,9 @@ section.has-light-background {
   }
 }
 
-.center {
-  text-align: center !important;
+.reveal pre.center {
+  width: max-content;
+  margin: $blockMargin auto;
 }
 
 // Theme template ------------------------------

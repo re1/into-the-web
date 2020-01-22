@@ -35,12 +35,17 @@
         transform: translate(-25%, -125%);
         text-align: center;
       }
+
+      .browsers > object {
+        width: 20%;
+        margin: 1%;
+      }
     </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-background-image="./tiger.jpg">
+        <section data-background-image="images/tiger.jpg">
           <h1>Into the web</h1>
 
           <aside class="notes">
@@ -56,13 +61,12 @@
 
         <section
           data-background-iframe="https://into-the-web.glitch.me"
-          data-background-interactive
           data-background-color="white"
           data-preload
         ></section>
 
         <section>
-          <h2>HTML</h2>
+          <h2>&lt; HTML /&gt;</h2>
           <p>
             HyperText <strong><u>Markup</u></strong> Language
           </p>
@@ -71,6 +75,25 @@
             &lt;!-- Comment --&gt;<aside>        <b>HTML-Element</b><br />↙</aside>
             &lt;tag attribute="value"&gt;Content&lt;/tag&gt;
           </code></pre>
+
+          <aside class="notes">
+            Tim Berners-Lee @CERN 1989
+          </aside>
+        </section>
+
+        <section class="browsers">
+          <object type="image/svg+xml" data="images/chrome.svg">
+            Google Chrome Logo
+          </object>
+          <object type="image/svg+xml" data="images/firefox.svg">
+            Mozilla Firefox Logo
+          </object>
+          <object type="image/svg+xml" data="images/safari.svg">
+            Apple Safari Logo
+          </object>
+          <object type="image/svg+xml" data="images/edge.svg">
+            Microsoft Edge Logo
+          </object>
         </section>
 
         <section>
@@ -83,7 +106,6 @@
 
               &lt;body&gt;
                 &lt;h1&gt;Here be tigers!&lt;/h1&gt;
-                &lt;p&gt;Yet another draggy cat site.&lt;/p&gt;
               &lt;/body&gt;
             &lt;/html&gt;
           </code></pre>
@@ -91,25 +113,127 @@
         </section>
 
         <section>
-          <h3>Building blocks</h3>
-          <pre class="center"><code class="hljs" data-trim data-noescape>
+          <h3><small>Elements I</small><br />Text</h3>
+          <pre class="center"><code class="hljs html" data-trim data-noescape>
             &lt;h1&gt;Heading&lt;/h1&gt;
           </code></pre>
 
-          <pre class="center"><code class="hljs" data-trim data-noescape>
+          <pre class="center"><code class="hljs html" data-trim data-noescape>
             &lt;p&gt;Paragraph&lt;/p&gt;
           </code></pre>
 
-          <pre class="center"><code class="hljs" data-trim data-noescape>
+          <pre class="center"><code class="hljs html" data-trim data-noescape>
             &lt;b&gt;<b>bold</b>&lt;/b&gt; 
           </code></pre>
 
-          <pre class="center"><code class="hljs" data-trim data-noescape>
+          <pre class="center"><code class="hljs html" data-trim data-noescape>
             &lt;i&gt;<i>italic</i>&lt;/i&gt;
           </code></pre>
 
-          <pre class="center"><code class="hljs" data-trim data-noescape>
+          <pre class="center"><code class="hljs html" data-trim data-noescape>
             &lt;u&gt;<u>underlined</u>&lt;/u&gt;
+          </code></pre>
+
+          <pre class="center"><code class="hljs html" data-trim data-noescape>
+            line&lt;br /&gt;
+            break
+          </code></pre>
+        </section>
+
+        <section>
+          <b>Text</b>
+          <p>
+            <small>
+              A paragraph of <b>bold</b>, <i>italic</i> and
+              <u>underlined</u> text.
+            </small>
+          </p>
+          <pre
+            class="center"
+          ><code class="hljs" data-line-numbers data-trim data-noescape>
+            &lt;h2&gt;Text&lt;/h2&gt;
+            &lt;p&gt;
+              A paragraph of
+              &lt;b&gt;<b>bold</b>&lt;/b&gt;,
+              &lt;i&gt;<i>italic</i>&lt;/i&gt; and
+              &lt;u&gt;<u>underlined</u>&lt;/u&gt; text.
+            &lt;/p&gt;
+          </code></pre>
+        </section>
+
+        <section>
+          <h3><small>Elements II</small><br />Content</h3>
+          <pre class="center"><code class="hljs" data-trim data-noescape>
+            &lt;a href="hyperlink-reference"&gt;<u>Anchor</u>&lt;/a&gt;
+          </code></pre>
+
+          <pre class="center"><code class="hljs html" data-trim data-noescape>
+            &lt;img alt="alternative text" src="source.jpg" /&gt;
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>
+            <small>Elements III</small><br />
+            Lists
+          </h3>
+          <pre class="center"><code class="hljs html" data-trim data-noescape>
+            &lt;ul&gt; ← <b>Unordered List</b>
+              &lt;li&gt;&bull;  List item&lt;/li&gt;
+              &lt;li&gt;&bull;  List item&lt;/li&gt;
+            &lt;/ul&gt;
+          </code></pre>
+
+          <pre class="center"><code class="hljs html" data-trim data-noescape>
+            &lt;ol&gt; ← <b>Ordered List</b>
+              &lt;li&gt;1. List item&lt;/li&gt;
+              &lt;li&gt;2. List item&lt;/li&gt;
+            &lt;/ol&gt;
+          </code></pre>
+        </section>
+
+        <section>
+          <p><b>Tiger facts:</b></p>
+          <small>
+            <ul>
+              <li>Tigers are the largest wild cats in the world.</li>
+              <li>
+                A tiger's roar can be heard as far as three kilometres away.
+              </li>
+              <li>No two tigers have the same pattern of stripes.</li>
+            </ul>
+          </small>
+          <pre
+            class="center"
+            style="font-size: 0.6em"
+          ><code class="hljs html" data-trim data-noescape data-line-numbers>
+            &lt;ul&gt;
+              &lt;li&gt;Tigers are the largest wild cats in the world.&lt;/li&gt;
+              &lt;li&gt;A tiger's roar can be heard as far 
+                  as three kilometers away.&lt;/li&gt;
+              &lt;li&gt;No two tigers have the same pattern of stripes.&lt;/li&gt;
+            &lt;/ul&gt;
+          </code></pre>
+        </section>
+
+        <section>
+          <p><b>Tiger population by country:</b></p>
+          <small>
+            <ol>
+              <li>India 🇮🇳 2976</li>
+              <li>Russia 🇷🇺 433</li>
+              <li>Indonesia 🇮🇩 371</li>
+            </ol>
+          </small>
+          <pre
+            class="center"
+            style="font-size: 0.6em"
+          ><code class="hljs html" data-trim data-noescape data-line-numbers>
+            &lt;ol&gt;
+              &lt;li&gt;India 🇮🇳 2976&lt;/li&gt;
+              &lt;li&gt;Russia 🇷🇺 433&lt;/li&gt;
+              &lt;li&gt;Indonesia 🇮🇩 371&lt;/li&gt;
+            &lt;/ol&gt;
           </code></pre>
         </section>
 
@@ -121,6 +245,24 @@
             Quelltext-Hilfe hier.
           </aside>
         </section> -->
+
+        <section>
+          <strong>References</strong>
+          <small>
+            <ul>
+              <li>
+                <a href="https://justinjackson.ca/words.html">
+                  https://justinjackson.ca/words.html
+                </a>
+              </li>
+              <li>
+                <a href="http://info.cern.ch/hypertext/WWW/MarkUp/Tags.html">
+                  http://info.cern.ch/hypertext/WWW/MarkUp/Tags.html
+                </a>
+              </li>
+            </ul>
+          </small>
+        </section>
       </div>
     </div>
 
@@ -137,7 +279,8 @@
           { src: "plugin/markdown/markdown.js" },
           { src: "plugin/highlight/highlight.js" },
           { src: "plugin/notes/notes.js", async: true }
-        ]
+        ],
+        preloadIframes: true
       });
     </script>
   </body>
