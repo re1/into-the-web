@@ -49,11 +49,46 @@ section.has-light-background {
   }
 }
 
-.reveal pre.center {
-  width: max-content;
-  margin: $blockMargin auto;
-}
-
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal {
+  iframe {
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+  }
+
+  section img {
+    border: none;
+  }
+
+  section > footer {
+    --mono: "MONO" 1;
+    --casl: "CASL" 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 0.65em;
+    font-family: "Recursive", "Fira Code", "Fira Mono", monospace;
+    font-weight: bold;
+    line-height: 1.2em;
+
+    & > * {
+      &:first-child {
+        text-align: left;
+      }
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+
+  pre.center {
+    width: max-content;
+    margin: $blockMargin auto;
+  }
+}

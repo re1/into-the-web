@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta
-      name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      name="viewport"
     />
 
     <title>➽ Into the Web</title>
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/reveal.css" />
-    <link rel="stylesheet" href="css/theme/into-the-web.css" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/reveal.css" rel="stylesheet" />
+    <link href="css/theme/into-the-web.css" rel="stylesheet" />
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/into-the-web.css" />
+    <link href="lib/css/into-the-web.css" rel="stylesheet" />
 
     <!-- Printing and PDF exports -->
     <script>
@@ -45,6 +45,16 @@
   <body>
     <div class="reveal">
       <div class="slides">
+        <section>
+          <b>Into the web</b>
+          <footer>
+            <p>
+              @ University of Applied Sciences<br />&nbsp;&nbsp;Upper Austria
+            </p>
+            <p>Markus Reichl<br />January 24, 2020</p>
+          </footer>
+        </section>
+
         <section data-background-image="images/tiger.jpg">
           <h1>Into the web</h1>
 
@@ -60,8 +70,8 @@
         </section>
 
         <section
-          data-background-iframe="https://into-the-web.glitch.me"
           data-background-color="white"
+          data-background-iframe="https://into-the-web.glitch.me"
           data-preload
         ></section>
 
@@ -71,7 +81,7 @@
             HyperText <strong><u>Markup</u></strong> Language
           </p>
           <br />
-          <pre><code data-trim data-noescape>
+          <pre><code data-noescape data-trim>
             &lt;!-- Comment --&gt;<aside>        <b>HTML-Element</b><br />↙</aside>
             &lt;tag attribute="value"&gt;Content&lt;/tag&gt;
           </code></pre>
@@ -82,22 +92,22 @@
         </section>
 
         <section class="browsers">
-          <object type="image/svg+xml" data="images/chrome.svg">
+          <object data="images/chrome.svg" type="image/svg+xml">
             Google Chrome Logo
           </object>
-          <object type="image/svg+xml" data="images/firefox.svg">
+          <object data="images/firefox.svg" type="image/svg+xml">
             Mozilla Firefox Logo
           </object>
-          <object type="image/svg+xml" data="images/safari.svg">
+          <object data="images/safari.svg" type="image/svg+xml">
             Apple Safari Logo
           </object>
-          <object type="image/svg+xml" data="images/edge.svg">
+          <object data="images/edge.svg" type="image/svg+xml">
             Microsoft Edge Logo
           </object>
         </section>
 
         <section>
-          <pre><code class="hljs" data-line-numbers data-trim data-noescape>
+          <pre><code class="hljs html" data-line-numbers data-noescape data-trim>
             &lt;!DOCTYPE html&gt;
             &lt;html lang="en"&gt;
               &lt;head&gt;
@@ -113,28 +123,40 @@
         </section>
 
         <section>
-          <h3><small>Elements I</small><br />Text</h3>
-          <pre class="center"><code class="hljs html" data-trim data-noescape>
+          <h3><small>Elements 1</small><br />Text</h3>
+          <pre
+            class="center fragment"
+          ><code class="hljs html" data-noescape data-trim>
             &lt;h1&gt;Heading&lt;/h1&gt;
           </code></pre>
 
-          <pre class="center"><code class="hljs html" data-trim data-noescape>
+          <pre
+            class="center fragment"
+          ><code class="hljs html" data-noescape data-trim>
             &lt;p&gt;Paragraph&lt;/p&gt;
           </code></pre>
 
-          <pre class="center"><code class="hljs html" data-trim data-noescape>
-            &lt;b&gt;<b>bold</b>&lt;/b&gt; 
+          <pre
+            class="center fragment"
+          ><code class="hljs html" data-noescape data-trim>
+            &lt;b&gt;<b>bold</b>&lt;/b&gt;
           </code></pre>
 
-          <pre class="center"><code class="hljs html" data-trim data-noescape>
+          <pre
+            class="center fragment"
+          ><code class="hljs html" data-noescape data-trim>
             &lt;i&gt;<i>italic</i>&lt;/i&gt;
           </code></pre>
 
-          <pre class="center"><code class="hljs html" data-trim data-noescape>
+          <pre
+            class="center fragment"
+          ><code class="hljs html" data-noescape data-trim>
             &lt;u&gt;<u>underlined</u>&lt;/u&gt;
           </code></pre>
 
-          <pre class="center"><code class="hljs html" data-trim data-noescape>
+          <pre
+            class="center fragment"
+          ><code class="hljs html" data-noescape data-trim>
             line&lt;br /&gt;
             break
           </code></pre>
@@ -150,7 +172,7 @@
           </p>
           <pre
             class="center"
-          ><code class="hljs" data-line-numbers data-trim data-noescape>
+          ><code class="hljs html" data-line-numbers data-noescape data-trim>
             &lt;h2&gt;Text&lt;/h2&gt;
             &lt;p&gt;
               A paragraph of
@@ -162,34 +184,70 @@
         </section>
 
         <section>
-          <h3><small>Elements II</small><br />Content</h3>
-          <pre class="center"><code class="hljs" data-trim data-noescape>
-            &lt;a href="hyperlink-reference"&gt;<u>Anchor</u>&lt;/a&gt;
+          <h3><small>Elements 2</small><br />Content</h3>
+          <pre
+            class="center fragment"
+          ><code class="hljs html" data-noescape data-trim>
+            &lt;img alt="Alternative text" src="source.jpg" /&gt;
           </code></pre>
 
-          <pre class="center"><code class="hljs html" data-trim data-noescape>
-            &lt;img alt="alternative text" src="source.jpg" /&gt;
+          <pre
+            class="center fragment"
+          ><code class="hljs html" data-noescape data-trim>
+            &lt;a href="hyperlink/reference"&gt;<u>Anchor</u>&lt;/a&gt;
+          </code></pre>
+        </section>
+
+        <section>
+          <p><b>Content:</b></p>
+          <img
+            alt="Hiding tiger"
+            src="https://source.unsplash.com/7nKv6HMsNEc/800x200"
+          />
+          <small>
+            Find this image on
+            <a href="unsplash.com/photos/7nKv6HMsNEc"><u>Unsplash</u></a>
+          </small>
+
+          <pre
+            class="center"
+            style="font-size: 0.6em"
+          ><code class="hljs html" data-line-numbers data-noescape data-trim>
+            &lt;img alt="Hiding tiger"
+                 src="https://source.unsplash.com/7nKv6HMsNEc/800x300" <span class="hljs-tag">/&gt;</span>
+            &lt;p&gt;
+              Find this image on
+              &lt;a href="unsplash.com/photos/7nKv6HMsNEc"&gt;Unsplash&lt;/a&gt;
+            &lt;/p&gt;
           </code></pre>
         </section>
 
         <section>
           <h3>
-            <small>Elements III</small><br />
+            <small>Elements 3</small><br />
             Lists
           </h3>
-          <pre class="center"><code class="hljs html" data-trim data-noescape>
+          <pre
+            class="center fragment"
+          ><code class="hljs html" data-noescape data-trim>
             &lt;ul&gt; ← <b>Unordered List</b>
-              &lt;li&gt;&bull;  List item&lt;/li&gt;
-              &lt;li&gt;&bull;  List item&lt;/li&gt;
+              &lt;li&gt;List item&lt;/li&gt;
+              &lt;li&gt;List item&lt;/li&gt;
             &lt;/ul&gt;
           </code></pre>
 
-          <pre class="center"><code class="hljs html" data-trim data-noescape>
+          <pre
+            class="center fragment"
+          ><code class="hljs html" data-noescape data-trim>
             &lt;ol&gt; ← <b>Ordered List</b>
-              &lt;li&gt;1. List item&lt;/li&gt;
-              &lt;li&gt;2. List item&lt;/li&gt;
+              &lt;li&gt;List item&lt;/li&gt;
+              &lt;li&gt;List item&lt;/li&gt;
             &lt;/ol&gt;
           </code></pre>
+
+          <aside class="notes">
+            Tiger population in Hagenberg = 1?
+          </aside>
         </section>
 
         <section>
@@ -206,10 +264,10 @@
           <pre
             class="center"
             style="font-size: 0.6em"
-          ><code class="hljs html" data-trim data-noescape data-line-numbers>
+          ><code class="hljs html" data-line-numbers data-noescape data-trim>
             &lt;ul&gt;
               &lt;li&gt;Tigers are the largest wild cats in the world.&lt;/li&gt;
-              &lt;li&gt;A tiger's roar can be heard as far 
+              &lt;li&gt;A tiger's roar can be heard as far
                   as three kilometers away.&lt;/li&gt;
               &lt;li&gt;No two tigers have the same pattern of stripes.&lt;/li&gt;
             &lt;/ul&gt;
@@ -228,7 +286,7 @@
           <pre
             class="center"
             style="font-size: 0.6em"
-          ><code class="hljs html" data-trim data-noescape data-line-numbers>
+          ><code class="hljs html" data-line-numbers data-noescape data-trim>
             &lt;ol&gt;
               &lt;li&gt;India 🇮🇳 2976&lt;/li&gt;
               &lt;li&gt;Russia 🇷🇺 433&lt;/li&gt;
@@ -247,21 +305,42 @@
         </section> -->
 
         <section>
-          <strong>References</strong>
-          <small>
-            <ul>
-              <li>
-                <a href="https://justinjackson.ca/words.html">
-                  https://justinjackson.ca/words.html
-                </a>
-              </li>
-              <li>
-                <a href="http://info.cern.ch/hypertext/WWW/MarkUp/Tags.html">
-                  http://info.cern.ch/hypertext/WWW/MarkUp/Tags.html
-                </a>
-              </li>
-            </ul>
-          </small>
+          <object width="50%" data="images/glitch.svg" type="image/svg+xml">
+            Glitch Logo
+          </object>
+
+          <aside class="notes">
+            <pre><code>
+              <h1>Here be tigers!</h1>
+
+              <h2>Text</h2>
+              <p>A paragraph of <b>bold</b>, <i>italic</i> and <u>underlined</u> text.</p>
+
+              <h2>Content</h2>
+              <img
+                      alt="Hiding tiger"
+                      src="https://source.unsplash.com/7nKv6HMsNEc/800x300"
+              />
+              <p>
+                Find this image on <a href="unsplash.com/photos/7nKv6HMsNEc">Unsplash</a>
+              </p>
+
+              <h2>Lists</h2>
+              <b>Tiger facts:</b>
+              <ul>
+                <li>Tigers are the largest wild cats in the world.</li>
+                <li>A tiger's roar can be heard as far as 3 kilometres away.</li>
+                <li>No two tigers have the same pattern of stripes.</li>
+              </ul>
+
+              <b>Tiger population by country:</b>
+              <ol>
+                <li>India 🇮🇳 2976</li>
+                <li>Russia 🇷🇺 433</li>
+                <li>Indonesia 🇮🇩 371</li>
+              </ol>
+            </code></pre>
+          </aside>
         </section>
       </div>
     </div>

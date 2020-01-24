@@ -12,10 +12,6 @@ section.has-light-background h5,
 section.has-light-background h6 {
   color: #222; }
 
-.reveal pre.center {
-  width: max-content;
-  margin: 20px auto; }
-
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -280,3 +276,29 @@ body {
 @media print {
   .backgrounds {
     background-color: #191919; } }
+
+.reveal iframe {
+  width: 100%;
+  height: 75vh;
+  overflow: hidden; }
+
+.reveal section img {
+  border: none; }
+
+.reveal section > footer {
+  --mono: "MONO" 1;
+  --casl: "CASL" 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.65em;
+  font-family: "Recursive", "Fira Code", "Fira Mono", monospace;
+  font-weight: bold;
+  line-height: 1.2em; }
+  .reveal section > footer > *:first-child {
+    text-align: left; }
+  .reveal section > footer > *:last-child {
+    text-align: right; }
+
+.reveal pre.center {
+  width: max-content;
+  margin: 20px auto; }
